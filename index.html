@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+  </head>
+  <body>
+    <div id="div-button" class="center">
+      <input
+        id="btn-play"
+        class="btn"
+        type="button"
+        value="Play"
+        onclick="play()"
+      />
+     </div>
+     <script type="text/javascript">
+      function play() {
+        document.getElementById("btn-play").classList.remove("btn");
+        document.getElementById("btn-play").classList.add("none");
+        document.getElementById("div-button").classList.add("none");
+        document.getElementById("div-button").classList.remove("center");
+		document.getElementById("vv").classList.remove("none");
+        document.getElementById("msj").classList.remove("none");
+        document.getElementById("msj0").classList.remove("none");
+        document.getElementById("msj1").classList.remove("none");
+		document.getElementById("msj2").classList.remove("none");
+        document.getElementById("frame").classList.remove("none");
+        document.getElementById("msj").classList.add("h1_animation");
+        document.getElementById("msj0").classList.add("h1_animation");
+        document.getElementById("msj1").classList.add("h1_animation");
+		document.getElementById("msj2").classList.add("h1_animation");
+        document.getElementById("frame").classList.add("center");
+		document.getElementById("vv").classList.add("center");
+        document.getElementById("corazon").classList.add("corazon_latir");
+        document.getElementById("photo1").classList.add("img_animation");
+        document.getElementById("photo2").classList.add("img_animation");
+      }
+    </script>
+
+    <h1 id="msj" class="none">Feliz Cumpleaños</h1>
+    <h2 id="msj0" class="none">Denisse Baez</h2>
+
+    <div id="frame" class="none">
+      <img id="corazon" class="" src="image/corazon.png" alt="animacion" />
+      <div id="group" class="center">
+         
+             <div class="carrusel-items">
+              <div class="carrusel-item">
+              <img src="./image/2.jpeg" alt="" />
+              </div>
+              <div class="carrusel-item">
+              <img src="./image/3.jpeg" alt="" />
+              </div>
+              <div class="carrusel-item">
+              <img src="./image/4.jpeg" alt="" />
+              </div>
+            <div class="carrusel-item">
+              <img src="./image/5.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+              <img src="./image/6.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+              <img src="./image/7.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+              <img src="./image/8.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+              <img src="./image/9.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+              <img src="./image/10.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+              <img src="./image/11.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+              <img src="./image/12.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+              <img src="./image/13.jpeg" alt="" />
+          
+			  
+          </div>
+		  <div class="carrusel-item">
+			<img src="./image/1.jpeg" alt="" />
+	   
+		</div>
+        </div>
+      </div>
+    </div>
+	<p id="msj2" class="none">¡Muy feliz cumpleaños! Te deseo un año lleno de minutos de amor, felicidad y alegría. Feliz Cumpleaños. Espero que este nuevo año en tu vida sea mejor que el anterior y que todos tus sueños se hagan realidad</p>
+	<h1 id="msj1" class="none">Te Quiero Mucho!!!</h1>
+	
+	   <video id="vv" class="none"      
+       width="250"
+       height="200"  controls="controls" autoplay="autoplay" >
+	   <source  src="videoplayback.mp4" type="video/mp4"/>
+	   </video>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
